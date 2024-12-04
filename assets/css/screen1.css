@@ -1,0 +1,48 @@
+
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+ 
+
+/*GLOBAL STYLES*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poiret One", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.main{
+    width: 90%;
+    max-width: 393px;
+    height: 852px;
+    background: #e4f5fd;
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.appbar{
+    display: flex;
+    align-content: space-between;
+    padding-top: 40px;
+    margin-bottom: 25px;
+}
+
+.appbar i{
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: -3px;
+    margin-left: 15px;
+    margin-right: 110px;
+}
+
+.appbar p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+

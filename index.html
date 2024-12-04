@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bennu Weather App</title>
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--Weather Icons-->
+    <link rel="stylesheet" href="./assets/css/weather-icons-master/css/weather-icons-wind.css">
+    <link rel="stylesheet" href="./assets/css/weather-icons-master/css/weather-icons.min.css">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <!--<div class="background">
+            <!-<i class="bi-cloud-fill" id="cloud-bg-1"></i>
+            <i class="bi-cloud-fill" id="cloud-bg-2"></i>
+            <i class="bi-cloud-fill" id="cloud-bg-3"></i>-
+        </div>-->
+
+        <div class="appbar">
+            <i class="bi-filter-left"></i>
+            <p class="title">Weather Forecast</p>
+        </div>
+        <section class="top">
+            <div class="dategroup">
+                <!--<i class="wi wi-sleet"></i>-->
+                <i class="bi-cloud-rain-fill"></i>
+                <span class="date">
+                    <h2>Today</h2>
+                    <p>Sat, 3 Aug</p>
+                </span>
+            </div>
+            <div class="tempgroup">
+                <h1>28 <span>°C</span></h1>
+            </div>
+            <div class="locationgroup">
+                <p>Barcelona, Spain</p>
+                <i class="bi-box-arrow-up-right"></i>
+            </div>
+            <div class="viewsgroup">
+                <p>Feels like 32</p>
+                <i class="bi-dot"></i>
+                <p>Sunset 20:15</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="daysgroup">
+                <div class="day activeday">
+                    <p>Today</p>
+                    <i class="bi-dot" ></i>
+                </div>
+                <div class="day">
+                    <p>Tomorrow</p>
+                    <i class="bi-dot"></i>
+                </div>
+                <div class="day">
+                    <p class="activelink"><a class="activelink" href="./screen1.html">Next 7 days<i class="bi-chevron-right"></i></a></p>
+                    <i class="bi-dot"></i>
+                </div>
+            </div>
+            <div class="cardsgroup">
+                <div class="card">
+                    <p>12 AM</p>
+                    <div class="imgcontainer">
+                        <i class="wi wi-day-sunny"></i>   
+                    </div>
+                    <h3>26 <span>°C</span></h3>
+                </div>
+                <div class="card">
+                    <p>2 PM</p>
+                    <div class="imgcontainer">
+                        <i class="wi wi-day-cloudy"></i>   
+                    </div>
+                    <h3>26 <span>°C</span></h3>
+                </div>
+                <div class="card defaultactivecard">
+                    <p>4 PM</p>
+                    <div class="imgcontainer">
+                        <i class="wi wi-showers"></i>   
+                    </div>
+                    <h3>26 <span>°C</span></h3>
+                </div>
+                <div class="card">
+                    <p>6 AM</p>
+                    <div class="imgcontainer">
+                        <i class="wi wi-cloud"></i>   
+                    </div>
+                    <h3>26 <span>°C</span></h3>
+                </div>
+                <div class="card">
+                    <p>8 AM</p>
+                    <div class="imgcontainer">
+                        <i class="wi wi-cloud"></i>   
+                    </div>
+                    <h3>26 <span>°C</span></h3>
+                </div>
+            </div> 
+        </section>
+
+        <section>
+            <h3 class="subtitle">Chance of rain</h3>
+            <div class="graphgroup">
+                <div class="weathergroup">
+                    <div class="weather">Sunny</div>
+                    <div class="weather">Rainy</div>
+                    <div class="weather">Heavy rain</div>
+                </div>
+                <div class="graph">
+                    <div class="graphcomp">
+                        <canva id="graphline"></canva>
+                        <div class="indicator"></div>
+                        <p class="value">10AM</p>
+                    </div>
+                    <div class="graphcomp">
+                        <canva id="graphline"></canva>
+                        <div class="indicator"></div>
+                        <p class="value">12AM</p>
+                    </div>
+                    <div class="graphcomp">
+                        <canva id="graphline"></canva>
+                        <div class="indicator"></div>
+                        <p class="value">2PM</p>
+                    </div>
+                    <div class="graphcomp">
+                        <canva id="graphline"></canva>
+                        <div class="defaultindicator"></div>
+                        <p class="value">4PM</p>
+                    </div>
+                    <div class="graphcomp">
+                        <canva id="graphline"></canva>
+                        <div class="indicator"></div>
+                        <p class="value">6PM</p>
+                    </div>
+                    <div class="graphcomp">
+                        <canva id="graphline"></canva>
+                        <div class="indicator"></div>
+                        <p class="value">8PM</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+
+        <script src="./assets/js/index.js"></script>
+    </div>
+</body>
+</html>
